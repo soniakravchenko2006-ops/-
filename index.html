@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick Owens — Магазин одежды</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+<header class="header">
+  <div class="logo">Rick Owens</div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#newCollection">Новая коллекция</a></li>
+      <li><a href="#galleryCarousel">Галерея образов</a></li>
+      <li><a href="#filter">Категории</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="burger" id="burger">&#9776;</div>
+</header>
+
+
+  <!-- Hero -->
+<section class="hero animate-fade">
+  <img src="images/rs-slides → rs-slide → rs-sbg-px → rs-sbg-wrap → rs-sbg → image (1).png" alt="Rick Owens" class="hero-bg">
+  <div class="hero-content">
+    <h1>Rick Owens</h1>
+    <button id="openModal">Смотреть коллекцию</button>
+  </div>
+</section>
+
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <p>Добро пожаловать в Rick Owens! Ознакомьтесь с нашей новой коллекцией.</p>
+    </div>
+  </div> 
+
+  <!-- About Us -->
+  <section class="about section animate-slide" id="about">
+    <div class="container">
+      <h2 class="section__title">О нас</h2>
+      <p>Rick Owens — бренд для смелых и стильных. Мы объединяем уличную моду с комфортом и качеством. Каждая коллекция — это отражение городской энергии.</p>
+    </div>
+  </section>
+  
+ <!-- TABS -->
+<section class="new-collection animate-fade" id="newCollection">
+  <h2 class="section-title">НОВАЯ КОЛЛЕКЦИЯ</h2>
+  <div class="section-line"></div>
+
+  <!-- Bootstrap табы -->
+  <ul class="nav nav-tabs justify-content-center border-0 mb-4" id="collectionTabs">
+    <li class="nav-item">
+      <button class="nav-link active tab-btn" data-bs-toggle="tab" data-bs-target="#new-tab">Новая</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link tab-btn" data-bs-toggle="tab" data-bs-target="#popular-tab">Популярная</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link tab-btn" data-bs-toggle="tab" data-bs-target="#exclusive-tab">Эксклюзив</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="collectionTabsContent">
+    <!-- Новая -->
+    <div class="tab-pane fade show active" id="new-tab">
+      <div class="tab-contents">
+        <div class="tab-content active">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/Link (1).jpg" alt="Кроссовки Новая 1">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW DBL DRKSTAR</span>
+            <p>Современный стиль и комфорт.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc02cx954a04r1-09-433x577.jpg.jpg" alt="Кроссовки Новая 2">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW DBL DRKSTAR</span>
+            <p>Легкие и дышащие.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc02bx943a03r0-0809-433x577.jpg (2).jpg" alt="Кроссовки Новая 3">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW TURBOWPN</span>
+            <p>Максимальная амортизация.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/Link.jpg" alt="Кроссовки Новая 4">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW TURBOWPN</span>
+            <p>Для активного образа жизни.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Популярная -->
+    <div class="tab-pane fade" id="popular-tab">
+      <div class="tab-contents">
+        <div class="tab-content">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc02bx943a03r0-0809-433x577.jpg.jpg" alt="Кроссовки Популярная 1">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW TURBODRK</span>
+            <p>Лучшие продажи этого сезона.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc02ax727ctdr2-91-433x577.jpg.jpg" alt="Кроссовки Популярная 2">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW DRKSTAR OX</span>
+            <p>Стильный и практичный выбор.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc02cx955a04r1-21-433x577.jpg.jpg" alt="Кроссовки Популярная 3">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW DBL DRKSTAR</span>
+            <p>Для повседневной носки.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc02ax765ctdr1-91-433x577.jpg.jpg" alt="Кроссовки Популярная 4">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW TURBODRK</span>
+            <p>Удобство и надежность.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Эксклюзив -->
+    <div class="tab-pane fade" id="exclusive-tab">
+      <div class="tab-contents">
+        <div class="tab-content">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc01bx291a01r0-91-433x577.jpg (1).jpg" alt="Кроссовки Эксклюзив 1">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW TURBODRK</span>
+            <p>Ограниченный выпуск.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc01bx292a01r0-181-433x577.jpg.jpg" alt="Кроссовки Эксклюзив 2">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW TURBODRK</span>
+            <p>Дизайн от известных дизайнеров.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc01dx756a06r0-122-433x577.jpg.jpg" alt="Кроссовки Эксклюзив 3">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW DBL DRKSTAR</span>
+            <p>Уникальные материалы.</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/dc01cx938a03r0-34-433x577.jpg.jpg" alt="Кроссовки Эксклюзив 4">
+            </div>
+            <span class="product-name">CONVERSE X DRKSHDW TURBODRK</span>
+            <p>Только для ценителей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Карусель с нормальными размерами -->
+<section class="gallery-carousel py-5">
+  <div class="container">
+    <h2 class="section__title text-center mb-5">Галерея образов</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Индикаторы -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+          </div>
+          
+          <!-- Слайды -->
+          <div class="carousel-inner">
+            <!-- Первый слайд (3 изображения) -->
+            <div class="carousel-item active">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                  <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/Rectangle 14.png">
+                    <img src="images/Rectangle 14.png" class="d-block w-100 rounded-3" alt="Образ 1">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/Rectangle 15.png">
+                    <img src="images/Rectangle 15.png" class="d-block w-100 rounded-3" alt="Образ 2">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/Rectangle 17.png">
+                    <img src="images/Rectangle 17.png" class="d-block w-100 rounded-3" alt="Образ 3">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Второй слайд (3 изображения) -->
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                  <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/imagesRectangle 18.png.jpg">
+                    <img src="images/imagesRectangle 18.png 1.png" class="d-block w-100 rounded-3" alt="Образ 4">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/imagesRectangle 19.png.jpg">
+                    <img src="images/imagesRectangle 19.png 1.png" class="d-block w-100 rounded-3" alt="Образ 5">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/imagesRectangle 20.png.jpg">
+                    <img src="images/imagesRectangle 20.png 1.png" class="d-block w-100 rounded-3" alt="Образ 6">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Кнопки навигации -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Модальное окно для просмотра изображений -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-header border-0 position-absolute top-0 end-0 z-3">
+        <button type="button" class="btn-close btn-close-white bg-light rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 position-relative">
+        <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y ms-3 rounded-circle shadow" id="prevModalImage" style="width: 50px; height: 50px;">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <img src="" alt="Образ" class="img-fluid rounded-3 shadow" id="modalImage">
+        <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y me-3 rounded-circle shadow" id="nextModalImage" style="width: 50px; height: 50px;">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Filter Catalog -->
+<section class="filter animate-slide">
+  <h2 class="section__title">Категории</h2>
+
+  <div class="filter-buttons">
+    <button data-category="all" class="active">Все</button>
+    <button data-category="men">Мужское</button>
+    <button data-category="women">Женское</button>
+  </div>
+
+  <div class="products-wrapper">
+    <div class="products-container">
+      <!-- Мужская одежда -->
+      <div class="product-card" data-category="men">
+        <div class="product-image">
+          <img src="images/RU01E5343_TWL_09_01 1.png" alt="Куртка">
+        </div>
+        <span class="product-name">Куртка мужская</span>
+        <p class="product-price">$320</p>
+      </div>
+
+      <div class="product-card" data-category="men">
+        <div class="product-image">
+          <img src="images/DU01E3755_DMWEP1_110911_01 1.png" alt="Футболка">
+        </div>
+        <span class="product-name">Футболка мужская</span>
+        <p class="product-price">$180</p>
+      </div>
+
+      <div class="product-card" data-category="men">
+        <div class="product-image">
+          <img src="images/RU01E5343_TWL_09_01 2.svg" alt="Брюки">
+        </div>
+        <span class="product-name">Брюки мужские</span>
+        <p class="product-price">$250</p>
+      </div>
+
+      <!-- Женская одежда -->
+      <div class="product-card" data-category="women">
+        <div class="product-image">
+          <img src="images/RP01E7366_JA_09_01 1.png" alt="Платье">
+        </div>
+        <span class="product-name">Платье женское</span>
+        <p class="product-price">$350</p>
+      </div>
+
+      <div class="product-card" data-category="women">
+        <div class="product-image">
+          <img src="images/RP01E7366_JA_09_01 3.png" alt="Юбка">
+        </div>
+        <span class="product-name">Юбка женская</span>
+        <p class="product-price">$220</p>
+      </div>
+
+      <div class="product-card" data-category="women">
+        <div class="product-image">
+          <img src="images/RP01E7366_JA_09_01 2 (1).png" alt="Топ">
+        </div>
+        <span class="product-name">Топ женский</span>
+        <p class="product-price">$160</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Accordion -->
+<section class="section faq animate-fade" id="faq">
+  <div class="container">
+    <h2 class="section__title">Частые вопросы</h2>
+    
+    <!-- Bootstrap аккордеон -->
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion__item">
+        <h2 class="accordion-header">
+          <button class="accordion__header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            <h3>Как оформить заказ?</h3>
+            <span class="accordion__icon"><i class="fas fa-plus"></i></span>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion__content">
+            <p>Чтобы оформить заказ, выберите товар, добавьте его в корзину и перейдите к оформлению. Укажите свои контактные данные, выберите способ доставки и оплаты, затем подтвердите заказ. После этого вы получите подтверждение по электронной почте.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <h2 class="accordion-header">
+          <button class="accordion__header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            <h3>Можно ли вернуть товар?</h3>
+            <span class="accordion__icon"><i class="fas fa-plus"></i></span>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion__content">
+            <p>Да, вы можете вернуть товар в течение 14 дней с момента получения, если он не был в использовании и сохранён товарный вид. Для оформления возврата свяжитесь с нашей службой поддержки и следуйте инструкциям.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <h2 class="accordion-header">
+          <button class="accordion__header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            <h3>Какие способы доставки?</h3>
+            <span class="accordion__icon"><i class="fas fa-plus"></i></span>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion__content">
+            <p>Мы предлагаем следующие способы доставки: курьерская доставка по городу, самовывоз из пункта выдачи, доставка почтой и экспресс-доставка. Доступные варианты зависят от вашего региона и будут указаны при оформлении заказа.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <h2 class="accordion-header">
+          <button class="accordion__header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            <h3>Какие способы оплаты доступны?</h3>
+            <span class="accordion__icon"><i class="fas fa-plus"></i></span>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion__content">
+            <p>Вы можете оплатить заказ следующими способами: онлайн-картой (Visa, MasterCard, МИР), через электронные кошельки (ЮMoney, QIWI), при получении наличными или картой, а также банковским переводом.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <section class="section testimonials animate-fade">
+  <div class="container">
+    <h2 class="section__title">Отзывы клиентов</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Очень стильные вещи, качество супер! Быстрая доставка."</p>
+        <div class="testimonial-author">— Анна</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Покупаю уже не первый раз. Всегда доволен."</p>
+        <div class="testimonial-author">— Кирилл</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Приятный сервис, оригинальные коллекции и всегда вовремя!"</p>
+        <div class="testimonial-author">— Мария</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Нашла идеальный подарок, качество на высоте. Упаковка — отдельный восторг!"</p>
+        <div class="testimonial-author">— Ольга</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Спасибо за индивидуальный подход. Вернусь снова!"</p>
+        <div class="testimonial-author">— Дмитрий</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Map Section -->
+<section class="section map-section animate-slide" id="map">
+  <div class="container">
+    <h2 class="section__title">Мы на карте</h2>
+    <div class="map-container">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c97e42c8b7ba3946d397725c3ef12f28f23922ea3c34fbb3b800ca41eb76e0e&amp;source=constructor" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+
+  <!-- Contacts -->
+<section class="section animate-slide" id="contacts">
+  <div class="container">
+    <h2 class="section__title">Контакты</h2>
+    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Примерная, 10</p>
+    <p><i class="fas fa-envelope"></i> info@urbanwear.ru</p>
+    <p><i class="fas fa-phone"></i> +7 (900) 000-00-00</p>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-vk fa-2x"></i></a>
+    </div>
+
+    <!-- Bootstrap форма с валидацией -->
+    <form class="contact-form needs-validation" novalidate>
+      <p class="form-message" style="display:none; color:#ffd700; margin-top:15px;">Спасибо! Мы скоро свяжемся с вами 💬</p>
+      
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Ваше имя" required>
+        <div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
+      </div>
+      
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email" required>
+        <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+      </div>
+      
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Сообщение" required></textarea>
+        <div class="invalid-feedback">Пожалуйста, введите сообщение</div>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+
+    <!-- Toast уведомление -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="contactToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <i class="fas fa-check-circle text-warning me-2"></i>
+          <strong class="me-auto">Rick Owens</strong>
+          <small>только что</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          <i class="fas fa-paper-plane me-2"></i>Ваше сообщение отправлено! Ответим в течение 24 часов.
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</section>
+
+ <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <a href="#">Rick Owens</a>
+        <a href="#">Rick Owens Sale</a>
+        <a href="#">Rick Owens DE</a>
+        <a href="#">Rick Owens Germany</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Rick Owens. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
